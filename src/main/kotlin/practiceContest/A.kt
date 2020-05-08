@@ -1,4 +1,4 @@
-package practice_contest
+package practiceContest
 
 fun main(args: Array<String>) {
     val a = readLine()!!.toInt()
