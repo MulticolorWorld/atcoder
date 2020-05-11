@@ -1,4 +1,4 @@
-package yorukatsu27
+package abc79
 
 fun main(args: Array<String>) {
     val a = readLine()!!.toCharArray().map { it.toString() }.map { it.toInt() }

@@ -1,4 +1,4 @@
-package yorukatsu34
+package abc73
 
 fun main(args: Array<String>) {
     val (n, m, rr) = readLine()!!.split(" ").map { it.toInt() }

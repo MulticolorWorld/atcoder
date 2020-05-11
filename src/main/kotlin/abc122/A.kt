@@ -1,4 +1,4 @@
-package yorukatsu35
+package abc122
 
 fun main(args: Array<String>) {
     val b = readLine()!!

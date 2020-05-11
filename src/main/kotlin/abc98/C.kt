@@ -1,4 +1,4 @@
-package yorukatsu27
+package abc98
 
 fun main(args: Array<String>) {
     val n = readLine()!!.toInt()
