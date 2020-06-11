@@ -30,7 +30,7 @@ class IntSegTree(
         }
     }
 
-    fun getOp(a: Int, b: Int, k: Int = 0, l: Int = 0, r: Int = size - 1): Int {
+    fun getOp(a: Int, b: Int, k: Int = 0, l: Int = 0, r: Int = size): Int {
         if (r <= a || b <= l) {
             return unit
         }
