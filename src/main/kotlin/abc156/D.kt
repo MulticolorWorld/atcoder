@@ -1,4 +1,32 @@
-package lib
+package abc156
+
+fun main(args: Array<String>) {
+    val (N, A, B) = readLine()!!.split(" ").map { it.toInt() }
+    val mod = 1000000007
+    val com = COM(mod, 2 * 100000 + 1)
+    com.modPow(2, N).let {
+        val k = it - com.calculateLarge(N.toLong(), A)
+        if (k < 0) {
+            k + mod
+        } else {
+            k % mod
+        }
+    }.let {
+        val k = it - com.calculateLarge(N.toLong(), B)
+        if (k < 0) {
+            k + mod
+        } else {
+            k % mod
+        }
+    }.let {
+        val k = it - 1
+        if (k < 0) {
+            k + mod
+        } else {
+            k % mod
+        }
+    }.let { println(it) }
+}
 
 class COM(
     val mod: Int,
