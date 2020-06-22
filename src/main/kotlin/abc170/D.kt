@@ -9,7 +9,7 @@ fun main() {
     val dp = BooleanArray(max + 1) { true }
     val searched = BooleanArray(max + 1) { false }
     A.forEach { it ->
-        var a = it
+        val a = it
         if (searched[a]) {
             dp[a] = false
             return@forEach
